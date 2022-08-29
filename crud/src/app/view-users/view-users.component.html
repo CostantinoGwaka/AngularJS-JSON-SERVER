@@ -1,0 +1,18 @@
+<p>view-users</p>
+
+<table>
+    <tr>
+        <th>SN</th>
+        <th>Name</th>
+        <td>Email</td>
+        <td>Action</td>
+    </tr>
+
+    <tr *ngFor="let user of collection; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td><a (click)="deleteUser(user.id)">Delete</a> | <a routerLink="/edit/{{ user.id }}">Edit</a></td>
+         
+    </tr>
+</table>

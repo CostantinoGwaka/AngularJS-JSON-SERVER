@@ -1,0 +1,9 @@
+<p>edit-users works!</p>
+
+<form [formGroup]="editUser" (ngSubmit)="edit()">
+    <input type="text" formControlName="name" placeholder="Enter your name"/><br/><br/>
+
+    <input type="text" formControlName="email" placeholder="Enter your email"/><br/><br/>
+    <input type="submit" value="Save"/>
+</form>
+
