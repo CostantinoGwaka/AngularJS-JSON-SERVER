@@ -8,6 +8,7 @@ import { ViewUsersComponent } from './view-users/view-users.component';
 import { EditUsersComponent } from './edit-users/edit-users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddUserComponent } from './add-user/add-user.component';
 
 
 
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     AddUsersComponent,
     ViewUsersComponent,
-    EditUsersComponent
+    EditUsersComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

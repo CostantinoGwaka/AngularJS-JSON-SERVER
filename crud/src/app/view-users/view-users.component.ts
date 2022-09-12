@@ -14,7 +14,7 @@ export class ViewUsersComponent implements OnInit {
 
   ngOnInit(): void {
     this.user.getList().subscribe((result) =>{
-      // this.collection = result;
+      this.collection = result;
       console.warn(result);
     })
   }

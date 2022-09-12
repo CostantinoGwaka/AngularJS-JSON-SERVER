@@ -1,0 +1,17 @@
+<p>add-user works!</p>
+
+<form [formGroup]="addUserNew" (ngSubmit)="collection()">
+    <input type="text" formControlName="name" placeholder="Enter your name"/><br/><br/>
+
+    <input type="text" formControlName="email" placeholder="Enter your email"/><br/><br/>
+    <input type="submit" value="Save"/>
+</form>
+
+<li>
+    <ul *ngFor="let user of collections;">{{ user.name }} <span style="color:green"><a>Edit</a></span> | <span style="color:red"><a (click)="deleteUser(user.id)">Delete</a></span></ul>
+    
+</li>
+
+
+
+
